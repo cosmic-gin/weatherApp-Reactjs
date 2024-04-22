@@ -13,7 +13,7 @@ function Forcast(props) {
       .get(
         `${apiKeys.base}weather?q=${
           city != "[object Object]" ? city : query
-        }&units=metric&APPID=${apiKeys.key}`
+        }&units=metric&APPID=49ffdd9fb7462ad0a6eec17390d08d67`
       )
       .then((response) => {
         setWeather(response.data);
